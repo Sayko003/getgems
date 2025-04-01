@@ -1,0 +1,70 @@
+.drops {
+    padding: 80px 0 84px 0;
+}
+.drops--wrapper {
+    display: grid;
+    gap: 32px 20px;
+    grid-template-columns: repeat(auto-fill,minmax(333px, 333px));
+    grid-template-columns: repeat(auto-fill,1fr);
+}
+.drops--title {
+    margin-bottom: 19px;
+}
+.drops--block {
+    display: block;
+    max-width: 333px;
+    width: 100%;
+    transition: all 0.2s ease-in;
+    &:hover{
+        .drops--img img{
+            transform: scale(1.05);
+        }
+    }
+}
+.drops--img {
+    margin-bottom: 12px;
+    max-width: 333px;
+    max-height: 333px;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+.drops--img img{
+    border-radius: 20px;
+    transition: all 0.2s ease-in; 
+}
+.drops--footer {
+    display: flex;
+    gap: 12px;
+}
+.drops--calendar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.drops--footer--text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey);
+}
+.drops--user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.icon--card-calendar {
+    width: 16px;
+    height: 16px;
+    stroke: var(--grey);
+    fill: var(--grey);
+}
+.icon--card-user {
+    width: 16px;
+    height: 16px;
+    stroke: var(--grey);
+    fill: var(--grey);
+}

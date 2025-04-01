@@ -26,7 +26,8 @@
 	font-family: var(--font-titles);
 	font-size: 18px;
 	font-weight: 500;
-	color: var(--text-color)
+	color: var(--text-color);
+	line-height: 26px;
 }
 
 .subtitle-drop {
@@ -34,6 +35,8 @@
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--text-sub);
+	line-height: 18px;
+	margin-bottom: 10px;
 }
 
 .title-about {
