@@ -76,24 +76,24 @@ gulp.task('html:dev', function () {
 				],
 			})
 		)
-		.pipe(
-			webpHTML({
-				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-				retina: {
-					1: '',
-					2: '@2x',
-				},
-			})
-		)
-		.pipe(
-			prettier({
-				tabWidth: 4,
-				useTabs: true,
-				printWidth: 182,
-				trailingComma: 'es5',
-				bracketSpacing: false,
-			})
-		)
+		// .pipe(
+		// 	webpHTML({
+		// 		extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+		// 		retina: {
+		// 			1: '',
+		// 			2: '@2x',
+		// 		},
+		// 	})
+		// )
+		// .pipe(
+		// 	prettier({
+		// 		tabWidth: 4,
+		// 		useTabs: true,
+		// 		printWidth: 182,
+		// 		trailingComma: 'es5',
+		// 		bracketSpacing: false,
+		// 	})
+		// )
 		.pipe(gulp.dest('./build/'));
 });
 

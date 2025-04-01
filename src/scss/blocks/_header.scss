@@ -1,0 +1,116 @@
+.header{
+    max-height: 80px;
+    height: 100%;
+    background-color: var(--page-bg);
+
+    position: fixed;
+    z-index: 7;
+    top:0;
+    left:0;
+    right: 0;
+}
+.header .container-full{
+    height: 100%;
+}
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header--left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.header--logo {
+    max-width: 165px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+}
+.header--search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    background-color:var(--search);
+    padding: 8px 10px 8px 10px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in;
+    max-width: 300px;
+    width: 300px;
+    &:hover{
+        border-color: var(--links-color);
+    }
+}
+.header--input{
+    font-weight: 400;
+    font-size: 15px;
+}
+.header .header--link{
+    font-weight: 600;
+}
+.header--btn {
+    width: 24px;
+    height: 24px;
+
+}
+.icon--search-white {
+    width: 24px;
+    height: 24px;
+    fill: #6E6E75;
+}
+.header--right {
+    display: flex;
+    align-items:center;
+    gap: 16px;
+}
+.header--number {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.icon--ton-white {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-plus);
+}
+.header--number--text {
+    font-weight: 600;
+}
+.header--modal {
+    padding: 12px 16px;
+    color: var(--text-color);
+    background-color: var(--links-color);
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    &:hover{
+        background-color: var(--links-hover);
+    }
+}
+.header--menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--background-sec);
+
+    transition: all 0.2s ease-in;
+    &:hover{
+        background-color: var(--background-sec-hover);
+    }
+}
+.icon--navbar {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-plus)
+}

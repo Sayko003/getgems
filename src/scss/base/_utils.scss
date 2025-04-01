@@ -31,10 +31,12 @@
 	text-align: center;
 }
 
-.d-flex {
+.d-flex-center {
 	display: flex;
+	align-items: center;
 }
 
 .flex-center {
 	justify-content: center;
 }
+
