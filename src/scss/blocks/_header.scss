@@ -109,8 +109,33 @@
         background-color: var(--background-sec-hover);
     }
 }
+
+
 .icon--navbar {
     width: 24px;
     height: 24px;
-    fill: var(--accent-plus)
+    fill: var(--accent-plus);
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.icon--sidebar{
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-plus);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    position: absolute;
+}
+
+.header--menu-active{
+    .icon--navbar{
+        position: absolute;
+        opacity: 0;
+        z-index: -2;
+    }
+    .icon--sidebar{
+        position: relative;
+        opacity: 1;
+    }
 }
