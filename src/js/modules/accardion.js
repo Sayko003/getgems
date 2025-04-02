@@ -7,7 +7,6 @@ const aboutAccardion = function(){
     for(let i = 0; i < btns.length; i++){
         btns[i].addEventListener(`click`, (e) =>{
             e.preventDefault();
-            console.log(`не работаем`);
             blocks[i].classList.add(`about--block-active`);
             sliders();
         });

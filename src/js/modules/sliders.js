@@ -33,20 +33,20 @@ const sliders = function(){
                 centeredSlides: true,
             },
             700: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 20,
                 centeredSlides: false
             },
             1200:{
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 20,
             },
             1400:{
-                slidesPerView: 3,
+                slidesPerView: 4.4,
                 spaceBetween: 20,
             },
             1650:{
-                slidesPerView: 4,
+                slidesPerView: 4.4,
                 spaceBetween: 20,
             }
         },
