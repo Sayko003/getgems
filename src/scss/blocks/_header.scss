@@ -139,3 +139,9 @@
         opacity: 1;
     }
 }
+
+@media (min-width: 1001px) and (max-width: 1600px){
+    .header--link{
+        display: none;
+    }
+}

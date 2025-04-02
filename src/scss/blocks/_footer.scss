@@ -153,3 +153,12 @@
     fill: var(--grey);
     transition: all 0.2s ease-in;
 }
+
+@media (min-width: 1001px) and (max-width: 1600px){
+    .footer--links{
+        flex-wrap: wrap;
+    }
+    .footer--wrapper{
+        gap: 15px;
+    }
+}

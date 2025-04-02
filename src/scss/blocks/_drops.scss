@@ -4,8 +4,7 @@
 .drops--wrapper {
     display: grid;
     gap: 32px 20px;
-    grid-template-columns: repeat(auto-fill,minmax(333px, 333px));
-    grid-template-columns: repeat(auto-fill,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(220px, 333px));
 }
 .drops--title {
     margin-bottom: 19px;
@@ -67,4 +66,17 @@
     height: 16px;
     stroke: var(--grey);
     fill: var(--grey);
+}
+
+@media (min-width: 1001px) and (max-width: 1600px) {
+    .drops--wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .drops--img {
+    margin-bottom: 12px;
+    max-width: 333px;
+    max-height: 100%;
+    height: auto;
+    }
+
 }
