@@ -47,6 +47,7 @@
     cursor: pointer;
     opacity: 0.6;
     transition: all 0.2s ease-in;
+    box-shadow: 0 0 2px #00000014, 0 0 24px #00000029;
     &:hover{
         opacity: 1;
     }
@@ -95,7 +96,7 @@
     }
 }
 .main .swiper-slide{
-    max-width: 350px;
+    // max-width: 350px;
     height: 100%;
 }
 
@@ -108,11 +109,13 @@
         max-width: 320px;
         max-height: 320px;
     }
-    .main .swiper-slide{
-        max-width: 320px;
-    }
     .main--slider{
         max-width: 100%;
+    }
+    .main .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .main-arrows{

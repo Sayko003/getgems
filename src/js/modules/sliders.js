@@ -28,12 +28,25 @@ const sliders = function(){
         },
         breakpoints: {
             320: {
-                slidesPerView: 'auto',
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+            },
+            700: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                centeredSlides: false
+            },
+            1200:{
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
-            // when window width is >= 640px
-            1001: {
-                slidesPerView: 'auto',
+            1400:{
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1650:{
+                slidesPerView: 4,
                 spaceBetween: 20,
             }
         },

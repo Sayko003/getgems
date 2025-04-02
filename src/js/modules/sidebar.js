@@ -16,7 +16,6 @@ const sidebar = function (){
     });
     
     lg.addEventListener(`click`, (e) =>{
-        e.preventDefault();
         lgChoise.classList.toggle(`sidebar--lg-choice-active`);
     })
 
@@ -24,6 +23,8 @@ const sidebar = function (){
         e.preventDefault();
         themeChoise.classList.toggle(`sidebar--theme-choice-active`);
     })
+
+    window.history.replaceState({}, document.title, '/');
 }
 
 export default sidebar;
