@@ -24,7 +24,7 @@ const sidebar = function (){
         themeChoise.classList.toggle(`sidebar--theme-choice-active`);
     })
 
-    window.history.replaceState({}, document.title, '/');
+    // window.history.replaceState({}, document.title, '/');
 }
 
 export default sidebar;

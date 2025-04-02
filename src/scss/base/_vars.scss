@@ -121,10 +121,19 @@
 		background-color: #fff;
 	}
 	.modal--wrapper{
-		background-color: #8b8b8b;
+		background-color: #9b9b9b;
 	}
-	.modal--web, .modal--tab--all, .modal--block--link{
+	.modal--tab--all{
 		background-color: rgba(229, 229, 234, 0.5);
+	}
+	.modal--block--link, .modal--web{
+		color: #0098EA;
+		background-color: rgba(0, 152, 234, 0.12);
+		svg{
+			path{
+				fill:#0098EA;
+			}
+		}
 	}
 	.header--search{
 		color: #000;
@@ -136,5 +145,8 @@
 				fill: #000;
 			}
 		}
+	}
+	.sidebar {
+		border: 1px solid rgba(229, 229, 234, 0.5);
 	}
 }
