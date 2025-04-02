@@ -162,3 +162,26 @@
         gap: 15px;
     }
 }
+
+@include mobile {
+    .footer{
+        padding-top: 28px;
+    }
+    .footer--wrapper{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .footer--links{
+        flex-wrap: wrap;
+    }
+    .footer--descr{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 360px) {
+    .footer--pages{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}

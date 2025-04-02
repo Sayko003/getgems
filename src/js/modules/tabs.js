@@ -6,17 +6,20 @@ const tabs = function(){
         tabsBtns = document.querySelectorAll(`.modal-script`),
         arrowsModal = document.querySelector(`.modal--arrow`),
         wrapperTabs = document.querySelector(`.modal--tabs`),
-        overlay = document.querySelector(`.modal .overlay`);
+        overlay = document.querySelector(`.modal .overlay`),
+        stopScroll = document.querySelector(`body`);
         
 
     btnModal.addEventListener(`click`, (e) =>{
         e.preventDefault();
         modal.classList.toggle(`modal-active`);
+        stopScroll.classList.add(`no-scroll`);
     });
 
     function close(item){
         item.addEventListener(`click`, (e) =>{
             e.preventDefault();
+            stopScroll.classList.remove(`no-scroll`);
             modal.classList.toggle(`modal-active`);
                 setTimeout(function() {
                     hideTabContent();

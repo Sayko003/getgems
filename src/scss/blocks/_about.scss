@@ -191,3 +191,9 @@
 .about-arrow-left svg{
     transform: rotate(180deg);
 }
+
+@include mobile {
+    .about{
+        padding-bottom: 30px;
+    }
+}

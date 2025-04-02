@@ -321,5 +321,28 @@
 .sidebar--theme-light-active {
     color:var(--links-color);
 }
+@include mobile {
+    .sidebar{
+        max-width: 360px;
+    }
+    .sidebar{
+        margin: 0 5px;
+        top:-100%;
+        right: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .sidebar-active {
+        top: 70px;
+        right: auto;
+        left:0;
+        opacity: 1;
+        z-index: 6;
+    }
+}
 
-
+@media (max-width: 360px) {
+    .sidebar{
+        max-width: 300px;
+    }
+}

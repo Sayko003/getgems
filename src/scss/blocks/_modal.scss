@@ -7,11 +7,13 @@
     right: 0;
     opacity: 0;
     transition: all 0.2s ease-in;
+    display: none;
 }
 
 .modal-active{
     z-index: 10;
     opacity: 1;
+    display: block;
 }
 .overlay {
     width: 100%;
@@ -416,4 +418,23 @@
 
 .modal--block-faq .modal--faq{
     margin-bottom: 20px;
+}
+
+@include mobile {
+    .modal--all--wrapper {
+        justify-content: center;
+    }
+    .modal--block-faq{
+        max-height: 575px;
+        overflow-y: scroll;
+    }
+    .modal--tabs {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modal--tabs {
+        gap: 0px;
+    }
 }
