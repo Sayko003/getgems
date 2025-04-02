@@ -85,6 +85,9 @@
     .drops{
         padding: 40px 0 42px 0;
     }
+    .drops--wrapper{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 360px) {
